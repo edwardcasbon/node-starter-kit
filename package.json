@@ -1,0 +1,21 @@
+{
+  "name": "node-starter-kit",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A starter kit for apps using NodeJS",
+  "main": "server.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "path": "^0.12.7",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "scripts": {
+    "server": "node server.js",
+    "build": "browserify -t [babelify] public/assets/js/src/example.js -o public/assets/js/dist/bundle.js"
+  }
+}
